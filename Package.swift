@@ -11,6 +11,9 @@ let checksum = "5d31230cb15f9267fd895beef5296c809574d9ed6d3fd14dda3c746c085ebf5f
 let offerwallRepoURL = "https://github.com/adison-ads/adison-offerwall-ios-sdk"
 let offerwallExactVersion = Version("3.4.0-beta1")
 
+let lottieRepoURL = "https://github.com/airbnb/lottie-spm"
+let lottieExactVersion = Version("4.3.4")
+
 // MARK: - Do not change.
 let package = Package(
     name: "BaeminOfwModule",
@@ -24,6 +27,9 @@ let package = Package(
         .package(
             url: offerwallRepoURL, exact: offerwallExactVersion
         ),
+        .package(
+            url: lottieRepoURL, exact: lottieExactVersion
+        )
     ],
     targets: [
         .binaryTarget(
@@ -34,7 +40,8 @@ let package = Package(
         .target(
             name: "BaeminOfwModuleTarget",
             dependencies: [
-                .product(name: "AdisonOfferwallSDK", package: "adison-offerwall-ios-sdk")
+                .product(name: "AdisonOfferwallSDK", package: "adison-offerwall-ios-sdk"),
+                .product(name: "Lottie", package: "lottie-spm")
             ],
             path: "Sources"
         )
