@@ -4,15 +4,15 @@
 import PackageDescription
 
 let repoURL = "https://github.com/adison-ads/adison-ofw-module-baemin-ios/releases/download"
-let artifactVersion = "0.9.6"
+let artifactVersion = "0.9.8"
 let artifactName = "BaeminOfwModule.zip"
-let checksum = "2b6a8a8292a12b1b229852b30805f3221ecd59bf0de67527537b684492d62d46"
+let checksum = "9e56cdebd0df22e4c23df017a6e7fe3bd2b2ee8b8498b6359661487d4e96ba49"
 
 let offerwallRepoURL = "https://github.com/adison-ads/adison-offerwall-ios-sdk"
 let offerwallExactVersion = Version("3.4.4")
 
 let lottieRepoURL = "https://github.com/airbnb/lottie-spm"
-let lottieExactVersion = Version("4.3.4")
+let lottieMinVersion = Version("4.3.4")
 
 // MARK: - Do not change.
 let package = Package(
@@ -27,9 +27,7 @@ let package = Package(
         .package(
             url: offerwallRepoURL, exact: offerwallExactVersion
         ),
-        .package(
-            url: lottieRepoURL, exact: lottieExactVersion
-        )
+        .package(url: lottieRepoURL, from: lottieMinVersion)
     ],
     targets: [
         .binaryTarget(
