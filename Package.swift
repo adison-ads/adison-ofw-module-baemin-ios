@@ -4,12 +4,12 @@
 import PackageDescription
 
 let repoURL = "https://github.com/adison-ads/adison-ofw-module-baemin-ios/releases/download"
-let artifactVersion = "1.0.4"
+let artifactVersion = "1.1.0"
 let artifactName = "BaeminOfwModule.zip"
-let checksum = "2fbe13603539848097c4a5d7e970ce84221499c23b62739d73b2fd8a2a40bf95"
+let checksum = "035aafb27face087f799264ec7ba35a559d683aa1af0944a3485ac4316ab9e67"
 
 let offerwallRepoURL = "https://github.com/adison-ads/adison-offerwall-ios-sdk"
-let offerwallExactVersion = Version("3.7.12")
+let offerwallExactVersion = Version("3.8.0")
 
 let lottieRepoURL = "https://github.com/airbnb/lottie-spm"
 let lottieMinVersion = Version("4.3.4")
