@@ -4,9 +4,9 @@
 import PackageDescription
 
 let repoURL = "https://github.com/adison-ads/adison-ofw-module-baemin-ios/releases/download"
-let artifactVersion = "1.4.0"
+let artifactVersion = "1.5.0"
 let artifactName = "BaeminOfwModule.zip"
-let checksum = "cdda042bf4de2499687917a6b8e3b59d4c0f3f4fb35c5ae55e408a38aff10e15"
+let checksum = "0740d0a03218e33c3edaed6271afc43551cc2fbedc4d1e385abbb5e32a630d44"
 
 let offerwallRepoURL = "https://github.com/adison-ads/adison-offerwall-ios-sdk"
 let offerwallExactVersion = Version("3.14.2")
